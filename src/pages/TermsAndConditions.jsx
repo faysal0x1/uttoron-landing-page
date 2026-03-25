@@ -27,64 +27,66 @@ export default function TermsAndConditions() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fefdf8] pb-24">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-primary-900 pt-32 pb-16 px-6 text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,white,transparent)]" />
+      <header className="bg-slate-950 py-32 px-6 relative overflow-hidden">
+        <div className="absolute inset-x-0 bottom-0 h-px bg-white/10" />
         <div className="max-w-4xl mx-auto relative z-10">
-          <Link to="/" className="inline-flex items-center gap-2 text-accent-light text-sm font-bold mb-8 hover:translate-x-[-4px] transition-transform">
-            <ChevronLeft size={16} /> Back to Home
+          <Link to="/" className="inline-flex items-center gap-2 text-primary-400 text-xs font-black tracking-widest uppercase mb-12 hover:text-white transition-colors group">
+            <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> BACK TO HOME
           </Link>
-          <h1 className="text-4xl md:text-5xl font-black font-serif text-white mb-4">Terms of Use</h1>
-          <div className="flex items-center justify-center gap-4 text-white/40 text-[10px] font-bold uppercase tracking-widest">
-            <div className="flex items-center gap-1.5"><Clock size={12} /> Last Updated: March 25, 2026</div>
-            <div className="w-1 h-1 rounded-full bg-white/20" />
-            <div className="flex items-center gap-1.5"><Globe size={12} /> Global Application</div>
+          <h1 className="text-6xl md:text-8xl font-black font-serif text-white tracking-tighter mb-8">
+            Terms of <br /> <span className="text-primary-500 italic font-normal">Use.</span>
+          </h1>
+          <div className="flex flex-wrap items-center gap-6 text-slate-500 text-[10px] font-black tracking-widest uppercase">
+            <div className="flex items-center gap-2"><Clock size={12} /> LAST UPDATED: MARCH 25, 2026</div>
+            <div className="w-1 h-1 rounded-full bg-slate-800" />
+            <div className="flex items-center gap-2"><Globe size={12} /> GLOBAL APPLICATION</div>
           </div>
         </div>
       </header>
 
       {/* Content */}
-      <main className="max-w-3xl mx-auto px-6 mt-[-40px]">
+      <main className="max-w-4xl mx-auto px-6 py-32">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-white rounded-[2.5rem] p-8 md:p-16 shadow-2xl shadow-black/[0.03] border border-black/5"
+          className="space-y-24"
         >
-          <div className="flex items-center gap-4 mb-12 p-6 rounded-3xl bg-primary-50">
-            <Scale className="text-primary-700 w-8 h-8 shrink-0" />
-            <p className="text-primary-900 text-sm font-semibold leading-relaxed">
-              Please read these terms carefully before using Uttoron. These terms govern your access to and 
+          <div className="flex flex-col md:flex-row gap-10 items-start p-12 bg-slate-50 rounded-[3rem] border border-slate-100">
+            <Scale className="text-primary-600 w-12 h-12" />
+            <p className="text-2xl font-serif font-black text-slate-900 leading-tight">
+              Please read these terms carefully. They govern your access to and 
               use of our platform and services.
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-20">
             {terms.map((term, idx) => (
-              <section key={idx}>
-                <h2 className="text-xl font-black text-primary-900 font-serif mb-4">{term.title}</h2>
-                <p className="text-text-mid leading-relaxed pl-4 border-l-2 border-primary-100">
+              <section key={idx} className="max-w-2xl">
+                <h2 className="text-3xl font-black font-serif text-slate-950 mb-6 tracking-tight">{term.title}</h2>
+                <p className="text-slate-500 font-medium leading-relaxed text-lg">
                   {term.content}
                 </p>
               </section>
             ))}
           </div>
 
-          <div className="mt-16 pt-12 border-t border-black/5 grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-black text-primary-900 mb-4 inline-flex items-center gap-2">
-                <HelpCircle className="w-5 h-5 text-primary-600" /> Need Help?
+          <div className="pt-20 border-t border-slate-100 grid md:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-black font-serif text-slate-950 inline-flex items-center gap-3">
+                <HelpCircle className="w-6 h-6 text-primary-600" /> Need Help?
               </h3>
-              <p className="text-text-mid text-sm leading-relaxed mb-6">
+              <p className="text-slate-500 font-medium leading-relaxed">
                 If you have questions about these terms, please contact us.
               </p>
-              <a href="mailto:support@syntorit.com" className="text-primary-600 font-bold hover:underline">
+              <a href="mailto:support@syntorit.com" className="inline-block text-xl font-black text-slate-950 hover:text-primary-600 transition-colors">
                 support@syntorit.com
               </a>
             </div>
-            <div className="bg-bg-cream p-6 rounded-2xl flex items-start gap-4">
-              <FileText className="text-primary-400 w-6 h-6 shrink-0" />
-              <p className="text-[10px] text-text-light uppercase font-bold tracking-widest leading-loose">
+            <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100 relative group overflow-hidden">
+              <FileText className="text-slate-200 absolute -right-4 -bottom-4 w-32 h-32 group-hover:scale-110 transition-transform" />
+              <p className="relative z-10 text-[10px] text-slate-400 uppercase font-black tracking-[0.2em] leading-loose">
                 Uttoron is a product of Syntorit. All rights reserved. Intellectual property protections apply to all question banks and original content.
               </p>
             </div>
@@ -92,12 +94,11 @@ export default function TermsAndConditions() {
         </motion.div>
       </main>
 
-      {/* Footer link */}
-      <div className="text-center mt-12">
-        <Link to="/" className="text-primary-600 font-bold text-sm hover:underline underline-offset-4">
-          Return to Uttoron Home
-        </Link>
-      </div>
+      <footer className="py-20 text-center border-t border-slate-50">
+        <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
+          © 2026 Uttoron. Legal guidelines.
+        </div>
+      </footer>
     </div>
   );
 }
