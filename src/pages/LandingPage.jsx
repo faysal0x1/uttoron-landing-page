@@ -28,9 +28,9 @@ const subjects = [
 ];
 
 const testimonials = [
-  { text: "Uttoron helped me pass BCS Preliminary on my first attempt. The mock tests are exactly like the real exam. I practiced daily for 3 months and the results were amazing.", name: "Rahim Uddin", role: "45th BCS Candidate", initial: "R" },
+  { text: "Abhijan helped me pass BCS Preliminary on my first attempt. The mock tests are exactly like the real exam. I practiced daily for 3 months and the results were amazing.", name: "Rahim Uddin", role: "45th BCS Candidate", initial: "R" },
   { text: "Best bank job preparation app in Bangladesh. The question quality is excellent and explanations are very clear. I got selected in Sonali Bank after using this app.", name: "Fatema Begum", role: "Sonali Bank Officer", initial: "F" },
-  { text: "I tried many apps but Uttoron is the most complete one. Offline mode is very helpful since I study during my commute. Highly recommend to all job seekers.", name: "Karim Hossain", role: "Govt Job Aspirant", initial: "K" },
+  { text: "I tried many apps but Abhijan is the most complete one. Offline mode is very helpful since I study during my commute. Highly recommend to all job seekers.", name: "Karim Hossain", role: "Govt Job Aspirant", initial: "K" },
 ];
 
 export default function LandingPage() {
@@ -60,7 +60,7 @@ export default function LandingPage() {
               <Trophy size={20} />
             </div>
             <span className={`text-2xl font-black font-serif tracking-tighter transition-colors ${scrolled ? "text-slate-900" : "text-white"}`}>
-              Uttoron<span className="text-primary-500">.</span>
+              Abhijan<span className="text-primary-500">.</span>
             </span>
           </div>
           
@@ -116,7 +116,7 @@ export default function LandingPage() {
                 className="w-full py-5 bg-primary-600 text-white rounded-3xl font-black text-xl text-center shadow-2xl shadow-primary-500/30"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Download Uttoron
+                Download Abhijan
               </a>
             </div>
           </motion.div>
@@ -148,12 +148,12 @@ export default function LandingPage() {
             
             <h1 className="text-6xl md:text-8xl font-black text-white font-serif leading-[0.95] mb-8 tracking-tighter">
               Rise <span className="text-primary-500 italic font-normal">higher</span> <br />
-              with Uttoron.
+              with Abhijan.
             </h1>
             
             <p className="text-xl text-slate-400 font-medium mb-10 max-w-lg leading-relaxed">
               Bangladesh's premier BCS & Government Job prep platform. 
-              <span className="text-white block mt-2 italic font-light">উত্তরণ — আপনার স্বপ্নের চাকরির পথে।</span>
+              <span className="text-white block mt-2 italic font-light">অভিযান — আপনার স্বপ্নের চাকরির পথে।</span>
             </p>
 
             <div className="flex flex-wrap gap-6 mb-16">
@@ -199,7 +199,7 @@ export default function LandingPage() {
               {/* Screen Content */}
               <div className="absolute inset-0 flex flex-col pt-12 pb-6 px-5 bg-slate-900">
                 <div className="flex items-center justify-between mb-8">
-                  <div className="text-xl font-black font-serif text-white">Uttoron</div>
+                  <div className="text-xl font-black font-serif text-white">Abhijan</div>
                   <div className="w-10 h-10 rounded-full bg-primary-500/10 flex items-center justify-center text-primary-500 border border-primary-500/20">
                     <Trophy size={16} />
                   </div>
@@ -391,7 +391,7 @@ export default function LandingPage() {
       <footer className="py-32 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
            <div className="text-5xl font-black font-serif text-slate-950 mb-12">
-            Uttoron<span className="text-primary-600">.</span>
+            Abhijan<span className="text-primary-600">.</span>
            </div>
            
            <div className="flex flex-wrap justify-center gap-12 mb-20 text-slate-500 font-bold uppercase tracking-widest text-xs">
@@ -412,10 +412,10 @@ export default function LandingPage() {
 
            <div className="w-full pt-16 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-10">
              <div className="text-slate-400 font-bold text-[10px] uppercase tracking-widest">
-                © 2026 UTTORON INC. ALL RIGHTS RESERVED.
+                © 2026 ABHIJAN INC. ALL RIGHTS RESERVED.
              </div>
              <div className="text-slate-900 font-serif font-black italic">
-               উত্তরণ — উঠে আসো, এগিয়ে যাও।
+               অভিযান — এগিয়ে চলো, জয় করো।
              </div>
            </div>
         </div>

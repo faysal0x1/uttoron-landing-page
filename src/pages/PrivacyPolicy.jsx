@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
           className="space-y-24"
         >
           <p className="text-3xl font-serif font-black text-slate-900 leading-tight">
-            At Uttoron, we are committed to protecting your privacy. This policy explains what data we collect, 
+            At Abhijan, we are committed to protecting your privacy. This policy explains what data we collect, 
             why we collect it, and how we protect it.
           </p>
 
@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
 
       <footer className="py-20 text-center border-t border-slate-50">
         <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
-          © 2026 Uttoron. Respecting your data.
+          © 2026 Abhijan. Respecting your data.
         </div>
       </footer>
     </div>

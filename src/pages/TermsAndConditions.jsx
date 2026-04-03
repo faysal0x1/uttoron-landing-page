@@ -6,11 +6,11 @@ export default function TermsAndConditions() {
   const terms = [
     {
       title: "1. Acceptance of Terms",
-      content: "By accessing and using Uttoron, you agree to be bound by these Terms and Conditions. If you do not agree to all of these terms, do not use the service."
+      content: "By accessing and using Abhijan, you agree to be bound by these Terms and Conditions. If you do not agree to all of these terms, do not use the service."
     },
     {
       title: "2. Description of Service",
-      content: "Uttoron provides educational materials, practice tests, and analytics for BCS and government job exam preparation. We reserve the right to modify or discontinue any part of the service at any time."
+      content: "Abhijan provides educational materials, practice tests, and analytics for BCS and government job exam preparation. We reserve the right to modify or discontinue any part of the service at any time."
     },
     {
       title: "3. User Conduct",
@@ -18,7 +18,7 @@ export default function TermsAndConditions() {
     },
     {
       title: "4. Intellectual Property",
-      content: "All content provided in Uttoron, including questions, explanations, graphics, and logos, is the property of Uttoron or its licensors and is protected by copyright laws."
+      content: "All content provided in Abhijan, including questions, explanations, graphics, and logos, is the property of Abhijan or its licensors and is protected by copyright laws."
     },
     {
       title: "5. Limitation of Liability",
@@ -87,7 +87,7 @@ export default function TermsAndConditions() {
             <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100 relative group overflow-hidden">
               <FileText className="text-slate-200 absolute -right-4 -bottom-4 w-32 h-32 group-hover:scale-110 transition-transform" />
               <p className="relative z-10 text-[10px] text-slate-400 uppercase font-black tracking-[0.2em] leading-loose">
-                Uttoron is a product of Syntorit. All rights reserved. Intellectual property protections apply to all question banks and original content.
+                Abhijan is a product of Syntorit. All rights reserved. Intellectual property protections apply to all question banks and original content.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function TermsAndConditions() {
 
       <footer className="py-20 text-center border-t border-slate-50">
         <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
-          © 2026 Uttoron. Legal guidelines.
+          © 2026 Abhijan. Legal guidelines.
         </div>
       </footer>
     </div>
